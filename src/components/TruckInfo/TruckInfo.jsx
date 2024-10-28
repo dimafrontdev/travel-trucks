@@ -14,7 +14,7 @@ import {
   titleVariants,
 } from "./animations.js";
 
-import styles from "./TruckInfo.module.scss";
+import styles from "./truckInfo.module.scss";
 
 const TruckInfo = ({ item }) => {
   const { t } = useTranslation();
