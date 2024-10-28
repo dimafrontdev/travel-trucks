@@ -34,7 +34,7 @@
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/your-username/goit-neo-react-hw-module1.git
+git clone https://github.com/dimafrontdev/travel-trucks
 ```
 2. **Install dependencies:**
  ```bash
