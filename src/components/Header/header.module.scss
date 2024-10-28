@@ -1,0 +1,54 @@
+@use 'src/scss/variables' as vars;
+
+.header {
+  min-height: 72px;
+  height: 72px;
+  background: vars.$white;
+  border-bottom: 1px solid vars.$badges;
+  padding: 24px 0;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+
+  &.headerGray {
+    background: vars.$inputs;
+  }
+
+  .nav {
+    width: 50%;
+    display: flex;
+    gap: 32px;
+
+    .link {
+      text-decoration: none;
+      color: vars.$main;
+      font-weight: 500;
+
+      &.active {
+        color: vars.$button-hover;
+      }
+    }
+
+    @media screen and (max-width: 960px) {
+      width: unset;
+      margin-right: 80px;
+    }
+  }
+
+  .languageToggle {
+    position: absolute;
+    right: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+}

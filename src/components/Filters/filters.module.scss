@@ -1,0 +1,8 @@
+@use 'src/scss/variables' as vars;
+
+.filtersTitle {
+  margin: 40px 0 32px 0;
+  font-weight: 500;
+  line-height: 1.5;
+  color: vars.$text
+}

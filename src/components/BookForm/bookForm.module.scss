@@ -1,0 +1,33 @@
+@use "src/scss/variables" as vars;
+
+.form {
+  border-radius: 10px;
+  border: 1px solid vars.$gray-light;
+  padding: 44px;
+  min-width: 200px;
+  height: 588px;
+
+  .title {
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    color: vars.$main;
+  }
+
+  .subtitle {
+    color: vars.$gray;
+  }
+
+  .fields {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 24px 0;
+  }
+
+  .submit {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+}

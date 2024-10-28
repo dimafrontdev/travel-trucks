@@ -1,0 +1,27 @@
+@use "src/scss/variables" as vars;
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+
+  .review {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .author {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+
+      .rating {
+        font-weight: 500;
+      }
+    }
+
+    .comment {
+      color: vars.$text;
+    }
+  }
+}

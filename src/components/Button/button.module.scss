@@ -1,0 +1,34 @@
+@use 'src/scss/variables' as vars;
+
+.button {
+  padding: 16px 48px;
+  height: 56px;
+  border-radius: 200px;
+  width: max-content;
+  border: none;
+  font-weight: 500;
+  letter-spacing: -0.08px;
+  cursor: pointer;
+
+  &.primary {
+    background: vars.$button;
+    color: vars.$white;
+    transition: background .3s ease-in-out;
+
+    &:hover {
+      background: vars.$button-hover;
+    }
+  }
+
+  &.secondary {
+    background: vars.$white;
+    border: 1px solid vars.$gray-light;
+    color: vars.$main;
+    transition: border-color .3s ease-in-out;
+
+
+    &:hover {
+      border-color: vars.$button-hover;
+    }
+  }
+}

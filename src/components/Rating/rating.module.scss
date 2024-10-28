@@ -1,0 +1,16 @@
+.subInfo {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+
+  .rating {
+    margin: 0 16px 0 4px;
+    text-decoration: underline;
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}

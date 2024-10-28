@@ -1,0 +1,11 @@
+@use 'src/scss/variables' as vars;
+
+.featuresInfo {
+  min-width: 200px;
+  background: vars.$inputs;
+  border-radius: 10px;
+  padding: 44px 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}

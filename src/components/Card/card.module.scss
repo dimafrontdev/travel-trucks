@@ -1,0 +1,87 @@
+@use "src/scss/variables" as vars;
+
+.card {
+  min-height: 368px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid vars.$gray-light;
+  background: vars.$white;
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+
+  @media screen and (max-width: 768px) {
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .image {
+    width: 292px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .cardContent {
+    width: 100%;
+    max-width: calc(100% - 292px - 24px);
+
+    @media screen and (max-width: 768px) {
+      max-width: 360px;
+    }
+
+    .name,
+    .price {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.33;
+      display: inline-block;
+    }
+
+    .header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media screen and (max-width: 960px) {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .favorite {
+      cursor: pointer;
+
+      & path {
+        transition: fill 0.3s ease-in-out;
+      }
+
+      &.active path,
+      &:hover path {
+        fill: vars.$button;
+      }
+    }
+
+    .description {
+      margin: 24px 0;
+      color: vars.$text;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .button {
+      margin-top: 24px;
+    }
+  }
+}

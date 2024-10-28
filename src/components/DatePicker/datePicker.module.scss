@@ -1,0 +1,22 @@
+@use "src/scss/variables" as vars;
+
+.fieldWrapper > div {
+  width: 100%;
+}
+
+.datePicker {
+  border: none;
+  background: vars.$inputs;
+  padding: 16px 20px;
+  width: 100%;
+  height: 56px;
+  border-radius: 12px;
+  line-height: 1.5;
+  color: vars.$main;
+}
+
+.error {
+  color: vars.$button;
+  font-size: 12px;
+  margin: 0 0 0 16px;
+}
