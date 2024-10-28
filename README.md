@@ -34,21 +34,17 @@
 
 1. **Clone the repository:**
 ```bash
-   git clone https://github.com/your-username/goit-neo-react-hw-module1.git
+git clone https://github.com/dimafrontdev/travel-trucks
 ```
-2. **Navigate to the project directory:**
- ```bash
-cd goit-neo-react-hw-module1 
-```
-3. **Install dependencies:**
+2. **Install dependencies:**
  ```bash
 yarn install
 ```
-4. **Run the development server:**
+3. **Run the development server:**
  ```bash
 yarn dev 
 ```
-5. **Build for production:**
+4. **Build for production:**
  ```bash
 yarn build
 ```
